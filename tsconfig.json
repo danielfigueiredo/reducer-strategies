@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es6"],
+    "types": ["node", "jest"]
+  },
+  "include": ["src/index.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}

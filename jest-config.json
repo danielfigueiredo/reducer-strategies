@@ -1,0 +1,19 @@
+{
+  "testPathIgnorePatterns": ["/node_modules/"],
+  "coveragePathIgnorePatterns":  ["/node_modules/"],
+  "testResultsProcessor": "./node_modules/jest-junit-reporter",
+  "verbose": true,
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "transform": {
+    "^.+\\.(ts)$": "<rootDir>/ts-processor.js"
+  },
+  "testMatch": ["**/*.test.ts"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 1,
+      "functions": 1,
+      "lines": 1,
+      "statements": 1
+    }
+  }
+}
